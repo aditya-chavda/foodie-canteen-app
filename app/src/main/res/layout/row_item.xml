@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="5dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/txv_item_name"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            tools:text=""
+            android:textColor="#F77062"
+            android:fontFamily="sans-serif-light"
+            android:textSize="22.5sp" />
+
+        <TextView
+            android:id="@+id/txv_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:textColor="#878787"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            tools:text=""
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/item_minus"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/minus_light" />
+
+        <TextView
+            android:id="@+id/item_count"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/pink"
+            android:gravity="center"
+            android:text=""
+            android:fontFamily="sans-serif-light"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/item_add"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/plus_light" />
+    </LinearLayout>
+
+</LinearLayout>

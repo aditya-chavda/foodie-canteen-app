@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="hardcodedText,AutoFill"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:background="@drawable/objects_10"
+        android:contentDescription="separator"
+        android:src="@drawable/sep" />
+
+    <EditText
+        android:id="@+id/fn"
+        android:hint="ENTER FOOD NAME"
+        android:textSize="13sp"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/objects_10"
+        android:inputType="text" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:background="@drawable/objects_10"
+        android:contentDescription="separator"
+        android:src="@drawable/sep" />
+
+    <Button
+        android:id="@+id/btnRfood"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_login"
+        android:text="REMOVE FOOD"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "250867375124",
+    "firebase_url": "https://foodie-project1911.firebaseio.com",
+    "project_id": "foodie-project1911",
+    "storage_bucket": "foodie-project1911.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250867375124:android:707246d37105e0e2",
+        "android_client_info": {
+          "package_name": "com.watt.canpay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250867375124-5l87tm8034rlqg5075ka5ti7jlgnb638.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVQEWZRmC-xgLuZpz-95nTKiGIypQWxBM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

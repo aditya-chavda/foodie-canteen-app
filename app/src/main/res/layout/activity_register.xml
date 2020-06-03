@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login"
+    tools:ignore="HardcodedText,Autofill,RtlSymmetry"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-light"
+        android:text="REGISTER"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txv_foodie_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Foodie"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@id/edUsernR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reg" />
+
+    <EditText
+        android:id="@+id/edUsernR"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/objects_10"
+        android:hint="EMAIL"
+        android:inputType="textWebEmailAddress"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txv_foodie_label"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/sep"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_below="@+id/edUsernR"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/objects_10"
+        android:contentDescription="separator"
+        android:src="@drawable/sep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edUsernR" />
+
+    <EditText
+        android:id="@+id/edPassR"
+        android:hint="PASSWORD"
+        android:paddingLeft="20dp"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_below="@+id/sep"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/objects_10"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sep"/>
+
+    <ImageView
+        android:id="@+id/sep2"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_below="@+id/edPassR"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/objects_10"
+        android:contentDescription="separator"
+        android:src="@drawable/sep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edPassR" />
+
+    <EditText
+        android:id="@+id/edCPassR"
+        android:hint="CONFIRM PASSWORD"
+        android:paddingLeft="20dp"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_below="@+id/sep2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/objects_10"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sep2"/>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#fff"
+        android:enabled="false"
+        android:fontFamily="sans-serif-light"
+        android:text="REGISTER"
+        android:textColor="#F77062"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edCPassR"/>
+
+    <TextView
+        android:id="@+id/tvLoginR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Already Registered? Login here."
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
